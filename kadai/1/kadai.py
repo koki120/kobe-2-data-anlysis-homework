@@ -90,7 +90,7 @@ class EconomicData(CSVMixin):
         LocalGovernmentFinalConsumptionExpenditure: int,
         TotalCapital: int,
         YearOnYearIncreaseRate: float
-    ):
+    ) -> None:
         self.Prefecture = Prefecture
         self.NominalGrossPrefecturalProduct = NominalGrossPrefecturalProduct
         self.CitizenIncome = CitizenIncome
