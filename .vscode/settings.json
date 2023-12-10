@@ -1,6 +1,6 @@
 {
     "[python]": {
-        "editor.tabSize": 4,
+        "editor.defaultFormatter": "ms-python.autopep8",
         "editor.formatOnType": true,
     },
     "files.trimTrailingWhitespace": true,
@@ -58,9 +58,9 @@
     "notebook.output.textLineLimit": 100,
     "javascript.format.semicolons": "insert",
     "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": true,
-        "source.fixAll.stylelint": true,
-        "source.addMissingImports": true
+        "source.fixAll.eslint": "explicit",
+        "source.fixAll.stylelint": "explicit",
+        "source.addMissingImports": "explicit"
     },
     "eslint.format.enable": true,
     "typescript.updateImportsOnFileMove.enabled": "always",
