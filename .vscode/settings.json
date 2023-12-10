@@ -1,0 +1,102 @@
+{
+    "[python]": {
+        "editor.tabSize": 4,
+        "editor.formatOnType": true,
+    },
+    "files.trimTrailingWhitespace": true,
+    "[markdown]": {
+        "files.trimTrailingWhitespace": false
+    },
+    "files.insertFinalNewline": true,
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "python.linting.pylintEnabled": false,
+    "python.linting.enabled": true,
+    "workbench.iconTheme": "material-icon-theme",
+    "python.languageServer": "Pylance",
+    "workbench.editor.tabSizing": "shrink",
+    "zenMode.hideLineNumbers": false,
+    "explorer.confirmDragAndDrop": false,
+    "jupyter.askForKernelRestart": false,
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "python.linting.mypyEnabled": true,
+    "files.associations": {
+        "Dockerfile*": "dockerfile"
+    },
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook"
+    },
+    "prettier.requireConfig": true,
+    "python.formatting.provider": "black",
+    "python.linting.flake8Enabled": true,
+    "python.linting.flake8Args": [
+        "--max-line-length=88"
+    ],
+    "files.exclude": {
+        "**/__pycache__": true,
+        "**/.classpath": true,
+        "**/.factorypath": true,
+        "**/.mypy_cache": true,
+        "**/.project": true,
+        "**/.pytest_cache": true,
+        "**/.settings": true,
+        "**/.venv": true
+    },
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    },
+    "go.toolsManagement.autoUpdate": true,
+    "json.schemas": [],
+    "eslint.alwaysShowStatus": true,
+    "editor.renderWhitespace": "none",
+    "editor.bracketPairColorization.enabled": true,
+    "notebook.output.textLineLimit": 100,
+    "javascript.format.semicolons": "insert",
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true,
+        "source.fixAll.stylelint": true,
+        "source.addMissingImports": true
+    },
+    "eslint.format.enable": true,
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "editor.suggest.showMethods": true,
+    "editor.suggest.preview": true,
+    "editor.acceptSuggestionOnEnter": "on",
+    "editor.snippetSuggestions": "top",
+    "python.linting.mypyArgs": [
+        "--follow-imports=silent",
+        "--ignore-missing-imports",
+        "--show-column-numbers",
+        "--no-pretty",
+        "--strict"
+    ],
+    "cSpell.ignoreWords": [],
+    "editor.minimap.enabled": false,
+    "python.analysis.autoImportCompletions": true,
+    "python.analysis.inlayHints.functionReturnTypes": true,
+    "audioCues.lineHasError": "off",
+    "editor.inlineSuggest.enabled": true,
+    "files.eol": "\n",
+    "diffEditor.ignoreTrimWhitespace": false,
+    "eslint.probe": [
+        "javascript",
+        "javascriptreact",
+        "typescript",
+        "typescriptreact",
+        "html",
+        "vue",
+        "markdown",
+        "json"
+    ],
+    "editor.quickSuggestions": {
+        "other": true,
+        "comments": true,
+        "strings": true
+    },
+}

@@ -1,0 +1,33 @@
+{
+	"name": "data-analysis-python",
+	"image":"mcr.microsoft.com/vscode/devcontainers/python:3",
+	"features": {
+		"ghcr.io/devcontainers/features/common-utils:2": {
+            "configureZshAsDefaultShell": "true",
+			"upgradePackages": "true"
+		}
+	},
+
+	// Configure tool-specific properties.
+	"customizations": {
+		// Configure properties specific to VS Code.
+		"vscode": {
+			// Add the IDs of extensions you want installed when the container is created.
+			"extensions": [
+				"dbaeumer.vscode-eslint",
+				"esbenp.prettier-vscode",
+				"streetsidesoftware.code-spell-checker",
+				"bierner.markdown-mermaid",
+				"ms-python.python",
+				"ms-python.isort",
+				"ms-python.vscode-pylance"
+			]
+		}
+	},
+
+	// コンテナ名をつける
+	"runArgs": ["--name", "data-analysis-python-dev"],
+
+	// Set `remoteUser` to `root` to connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
+	"remoteUser": "vscode"
+}
