@@ -51,3 +51,18 @@ def convert_prefecture_to_english(prefecture):
     }
 
     return prefecture_dict.get(prefecture, "Unknown")
+
+
+def convert_column_to_english(term) -> str:
+    japanese_to_english = {
+        '名目県内総生産': 'Nominal Prefectural GDP',
+        '市': 'City',
+        '町': 'Town',
+        '村': 'Village',
+        '総面積': 'Total Area',
+        '0歳から14歳': '0 to 14 Years Old',
+        '15歳から64歳': '15 to 64 Years Old',
+        '65歳以上': '65 Years and Older'
+    }
+
+    return japanese_to_english.get(term, term)

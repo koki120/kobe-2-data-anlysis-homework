@@ -16,7 +16,7 @@ parent_dir = os.path.dirname(script_dir)
 # Add the parent directory to the Python path
 sys.path.append(parent_dir)
 
-from utils import convert_prefecture_to_english  # noqa
+from utils import convert_prefecture_to_english, convert_column_to_english  # noqa
 
 
 economicData = pd.read_csv(
@@ -82,6 +82,13 @@ ax = feature.plot(kind="scatter", x="PC1", y="PC2")
 for i, label in enumerate(df["都道府県"]):
     ax.annotate(convert_prefecture_to_english(label),
                 (feature.iloc[i, 0], feature.iloc[i, 1]))
+
+# biplotを追加
+for i, v in enumerate(pca.components_.T):
+    ax.arrow(0, 0, v[0], v[1], color='r', alpha=0.7)
+    ax.text(v[0], v[1], convert_column_to_english(
+        df.columns[i + 1]), color='r')
+
 plt.show()
 
 
